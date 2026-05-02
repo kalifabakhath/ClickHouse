@@ -1,1 +1,2 @@
 # ClickHouse
+for learning excercise
