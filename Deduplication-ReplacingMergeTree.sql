@@ -8,6 +8,7 @@ CREATE TABLE github_events_unique
 )
 ENGINE = ReplacingMergeTree(processed_time) -- Uses processed_time to determine the "latest" version
 ORDER BY (event_id);
+-- Having aggregated values
 
 INSERT INTO github_events_unique 
 SELECT 
